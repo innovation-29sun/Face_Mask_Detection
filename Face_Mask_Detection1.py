@@ -5,8 +5,8 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 import numpy as np
 import sklearn
-faceCascade = cv2.CascadeClassifier(r"C:\Users\sundar\Documents\py\face_mask\haarcascade_frontalface_alt2.xml")
-model = load_model(r"C:\Users\sundar\Documents\py\face_mask\mask_recog.h5")
+faceCascade = cv2.CascadeClassifier(r"C:\Users\username\Documents\py\face_mask\haarcascade_frontalface_alt2.xml")
+model = load_model(r"C:\Users\username\Documents\py\face_mask\mask_recog.h5")
 cap = cv2.VideoCapture(1)
 def face_mask_detector(frame):
   # frame = cv2.imread(fileName)
